@@ -1,3 +1,4 @@
+/* eslint-disable object-shorthand */
 /* eslint-disable comma-dangle */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable consistent-return */
@@ -20,7 +21,7 @@ async function fetchImages(inputValue, page) {
         orientation: 'horizontal',
         safesearch: true,
         per_page: 40,
-        page,
+        page: page,
       },
     });
     return response;
