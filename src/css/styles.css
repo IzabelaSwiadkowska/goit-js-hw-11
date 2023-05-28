@@ -12,6 +12,7 @@ form {
   align-items: center;
   opacity: 90%;
   position: fixed;
+  z-index: 4;
 }
 input {
   height: 25px;
@@ -61,7 +62,16 @@ input:hover {
   transform: scale(1.01);
   background-color: #4d3140;
 }
-
+.is-hidden {
+  display: none;
+}
+.list {
+  font-size: 30px;
+  list-style-type: none;
+}
+.list__item {
+  text-decoration: none;
+}
 img {
   height: 30vh;
   width: 100%;

@@ -33,7 +33,7 @@ async function renderGallery(images) {
               </div>`;
     })
     .join('');
-  gallery.innerHTML = markup;
+  gallery.innerHTML += markup;
 }
 
 export { renderGallery };
