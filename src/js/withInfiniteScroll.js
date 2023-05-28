@@ -10,7 +10,10 @@ import { Notify } from 'notiflix';
 import { fetchImages } from './fetchImages';
 import { renderGallery } from './renderGallery';
 
-const simpleLightBox = new SimpleLightbox('.gallery a');
+const simpleLightBox = new SimpleLightbox('.gallery a', {
+  captionDelay: 250,
+  captionsData: 'alt',
+});
 const input = document.querySelector('#search-form input');
 const searchBtn = document.querySelector('#search-button');
 const gallery = document.querySelector('.gallery');
